@@ -1,0 +1,371 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C0BEF302-F850-429F-893C-9AC6B87FD9B3}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Coursework_WebForm</RootNamespace>
+    <AssemblyName>Coursework_WebForm</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44376</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Oracle.DataAccess, Version=4.112.2.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=x86" />
+    <Reference Include="System.Web.DataVisualization" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="cssFile.css" />
+    <Content Include="css\animate.css" />
+    <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\font-awesome.min.css" />
+    <Content Include="css\reset.css" />
+    <Content Include="css\responsive.css" />
+    <Content Include="css\slicknav.min.css" />
+    <Content Include="customer.aspx" />
+    <Content Include="customer_package.aspx" />
+    <Content Include="Designation.aspx" />
+    <Content Include="font\css\all.css" />
+    <Content Include="font\css\all.min.css" />
+    <Content Include="font\css\brands.css" />
+    <Content Include="font\css\brands.min.css" />
+    <Content Include="font\css\fontawesome.css" />
+    <Content Include="font\css\fontawesome.min.css" />
+    <Content Include="font\css\regular.css" />
+    <Content Include="font\css\regular.min.css" />
+    <Content Include="font\css\solid.css" />
+    <Content Include="font\css\solid.min.css" />
+    <Content Include="font\css\svg-with-js.css" />
+    <Content Include="font\css\svg-with-js.min.css" />
+    <Content Include="font\css\v4-shims.css" />
+    <Content Include="font\css\v4-shims.min.css" />
+    <Content Include="font\webfonts\fa-brands-400.svg" />
+    <Content Include="font\webfonts\fa-regular-400.svg" />
+    <Content Include="font\webfonts\fa-solid-900.svg" />
+    <Content Include="home.aspx" />
+    <Content Include="img\b0c162ee-226d-4876-8f0e-d6380ba2861a_200x200.png" />
+    <Content Include="img\background\pricing.jpg" />
+    <Content Include="img\blog-bg.jpg" />
+    <Content Include="img\blog\codeing.jpg" />
+    <Content Include="img\blog\cup.jpg" />
+    <Content Include="img\contact-bg.png" />
+    <Content Include="img\crus.jpg" />
+    <Content Include="img\finallogo.png" />
+    <Content Include="img\logo mns.png" />
+    <Content Include="img\logo.png" />
+    <Content Include="img\logo1.png" />
+    <Content Include="img\logo2.png" />
+    <Content Include="img\logo3.png" />
+    <Content Include="img\logo4.png" />
+    <Content Include="img\logo5.png" />
+    <Content Include="img\logo6.png" />
+    <Content Include="img\mns.PNG" />
+    <Content Include="img\mnss.png" />
+    <Content Include="img\pbg.png" />
+    <Content Include="img\portfolio\1.jpg" />
+    <Content Include="img\portfolio\10.jpg" />
+    <Content Include="img\portfolio\11.jpg" />
+    <Content Include="img\portfolio\12.jpg" />
+    <Content Include="img\portfolio\2.jpg" />
+    <Content Include="img\portfolio\3.jpg" />
+    <Content Include="img\portfolio\4.jpg" />
+    <Content Include="img\portfolio\5.jpg" />
+    <Content Include="img\portfolio\6.jpg" />
+    <Content Include="img\portfolio\7.jpg" />
+    <Content Include="img\portfolio\8.jpg" />
+    <Content Include="img\portfolio\9.jpg" />
+    <Content Include="img\portfolio\cv.jpg" />
+    <Content Include="img\portfolio\cv2.jpg" />
+    <Content Include="img\portfolio\mas.jpg" />
+    <Content Include="img\portfolio\portfolio-bg.png" />
+    <Content Include="img\portfolio\project2.png" />
+    <Content Include="img\portfolio\project4.png" />
+    <Content Include="img\portfolio\sam.jpg" />
+    <Content Include="img\portfolio\sami.jpg" />
+    <Content Include="img\portfolio\samm.jpg" />
+    <Content Include="img\portfolio\samq.jpg" />
+    <Content Include="img\portfolio\smir.jpg" />
+    <Content Include="img\portfolio\smir1.jpg" />
+    <Content Include="img\portfolio\ss.jpg" />
+    <Content Include="img\slider\aa.jpg" />
+    <Content Include="img\slider\aaa.jpg" />
+    <Content Include="img\slider\four.jpg" />
+    <Content Include="img\slider\land.jpg" />
+    <Content Include="img\slider\one.jpg" />
+    <Content Include="img\slider\sd1.jpg" />
+    <Content Include="img\slider\sd2.jpg" />
+    <Content Include="img\slider\sd3.jpg" />
+    <Content Include="img\slider\slider1.png" />
+    <Content Include="img\slider\slider2.png" />
+    <Content Include="img\slider\slider3.png" />
+    <Content Include="img\slider\three.jpg" />
+    <Content Include="img\slider\two.jpg" />
+    <Content Include="img\team\mas.jpg" />
+    <Content Include="img\team\samcp.jpg" />
+    <Content Include="img\team\sammm.jpg" />
+    <Content Include="img\team\smir.jpg" />
+    <Content Include="img\testi-bg.png" />
+    <Content Include="img\web\abd.jpg" />
+    <Content Include="img\web\android image.jpg" />
+    <Content Include="img\web\android playstore.jpg" />
+    <Content Include="img\web\android.png" />
+    <Content Include="img\web\app development.png" />
+    <Content Include="img\web\cinema management.jpg" />
+    <Content Include="img\web\codeing.jpg" />
+    <Content Include="img\web\codeing.png" />
+    <Content Include="img\web\coding.png" />
+    <Content Include="img\web\cricket abd.jpg" />
+    <Content Include="img\web\cricket.jpg" />
+    <Content Include="img\web\environment website.png" />
+    <Content Include="img\web\football.png" />
+    <Content Include="img\web\football1.jpg" />
+    <Content Include="img\web\footballl.jpg" />
+    <Content Include="img\web\gym management system.png" />
+    <Content Include="img\web\gym.jpg" />
+    <Content Include="img\web\inventory management system.png" />
+    <Content Include="img\web\inventory management system1.png" />
+    <Content Include="img\web\java.jpg" />
+    <Content Include="img\web\literature1.png" />
+    <Content Include="img\web\literature2.jpg" />
+    <Content Include="img\web\literature3.jpg" />
+    <Content Include="img\web\menu management.png" />
+    <Content Include="img\web\menu management1.jpg" />
+    <Content Include="img\web\messi.jpg" />
+    <Content Include="img\web\messi1.jpg" />
+    <Content Include="img\web\movie.jpg" />
+    <Content Include="img\web\movie1.png" />
+    <Content Include="img\web\music.jpg" />
+    <Content Include="img\web\school dbms.jpg" />
+    <Content Include="img\web\school management system.jpg" />
+    <Content Include="img\web\shawshank redemption.png" />
+    <Content Include="img\web\software develoment.jpg" />
+    <Content Include="img\web\software develoment1.jpg" />
+    <Content Include="img\web\student enrollmtn.jpg" />
+    <Content Include="img\web\student enrollmtn.png" />
+    <Content Include="img\web\travel.png" />
+    <Content Include="img\web\travelling.jpg" />
+    <Content Include="img\web\travellingg%27.jfif" />
+    <Content Include="img\web\web design.jpg" />
+    <Content Include="img\web\web design1.jpg" />
+    <Content Include="img\web\web development.png" />
+    <Content Include="Index.aspx" />
+    <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\caroufredsel.js" />
+    <Content Include="js\jquery.js" />
+    <Content Include="js\jquery.slicknav.min.js" />
+    <Content Include="js\main.js" />
+    <Content Include="js\popper.js" />
+    <Content Include="js\smoothscroll.js" />
+    <Content Include="js\stellar.min.js" />
+    <Content Include="Package.aspx" />
+    <Content Include="package_activity.aspx" />
+    <Content Include="Staff.aspx" />
+    <Content Include="staff_role.aspx" />
+    <Content Include="Tourguide.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="WebForm2.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="customer.aspx.cs">
+      <DependentUpon>customer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="customer.aspx.designer.cs">
+      <DependentUpon>customer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="customer_package.aspx.cs">
+      <DependentUpon>customer_package.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="customer_package.aspx.designer.cs">
+      <DependentUpon>customer_package.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Designation.aspx.cs">
+      <DependentUpon>Designation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Designation.aspx.designer.cs">
+      <DependentUpon>Designation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="home.aspx.cs">
+      <DependentUpon>home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="home.aspx.designer.cs">
+      <DependentUpon>home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="index.Master.cs">
+      <DependentUpon>index.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index.Master.designer.cs">
+      <DependentUpon>index.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Package.aspx.cs">
+      <DependentUpon>Package.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Package.aspx.designer.cs">
+      <DependentUpon>Package.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="package_activity.aspx.cs">
+      <DependentUpon>package_activity.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="package_activity.aspx.designer.cs">
+      <DependentUpon>package_activity.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Staff.aspx.cs">
+      <DependentUpon>Staff.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Staff.aspx.designer.cs">
+      <DependentUpon>Staff.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="staff_role.aspx.cs">
+      <DependentUpon>staff_role.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="staff_role.aspx.designer.cs">
+      <DependentUpon>staff_role.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tourguide.aspx.cs">
+      <DependentUpon>Tourguide.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tourguide.aspx.designer.cs">
+      <DependentUpon>Tourguide.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm2.aspx.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm2.aspx.designer.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="font\webfonts\fa-brands-400.eot" />
+    <Content Include="font\webfonts\fa-brands-400.ttf" />
+    <Content Include="font\webfonts\fa-brands-400.woff" />
+    <Content Include="font\webfonts\fa-brands-400.woff2" />
+    <Content Include="font\webfonts\fa-regular-400.eot" />
+    <Content Include="font\webfonts\fa-regular-400.ttf" />
+    <Content Include="font\webfonts\fa-regular-400.woff" />
+    <Content Include="font\webfonts\fa-regular-400.woff2" />
+    <Content Include="font\webfonts\fa-solid-900.eot" />
+    <Content Include="font\webfonts\fa-solid-900.ttf" />
+    <Content Include="font\webfonts\fa-solid-900.woff" />
+    <Content Include="font\webfonts\fa-solid-900.woff2" />
+    <Content Include="img\web\codingg.webp" />
+    <Content Include="img\web\inventory management system.webp" />
+    <Content Include="index.Master" />
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>62412</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44376/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

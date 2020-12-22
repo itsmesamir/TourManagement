@@ -1,0 +1,155 @@
+.slicknav_menu{
+	display: none;
+}
+@media screen and (max-width: 1200px){ /**responsive media query*/
+	
+	.slider{
+		margin-top: 105px;
+	}
+	header{
+		margin-top: -105px;
+		background-color: #34495e;
+	}
+	#menu{
+		display: none;
+	}
+	.slicknav_menu{
+		display: inline-block;
+		position: fixed;
+		background:rgba(0,0,0,0);
+		z-index: 200;
+		right: 0px;
+		margin-top: -105px;
+
+	}
+	.slicknav_btn{
+		background-color: #e74c3c;
+		margin:35px 30px 0 0;
+	}
+	.slicknav_nav{
+		background-color: #34495e;
+		width: 190px;
+
+	}
+	.slicknav_nav li{
+		margin:0;
+		padding:0;
+		font-weight: bold;
+		height: 3em;
+		line-height: 3em;
+		width: 190px; 
+		text-align: center;
+		border-bottom: 1px solid #2e4155;
+		border-top: 1px solid #3d5267;
+
+	}
+	.slicknav_nav li a{
+		margin:0;
+		padding: 0;
+	}
+	.slicknav_nav li a:hover{
+		color:#e74c3c;
+		background-color: rgba(0,0,0,0);
+	}
+	.slider,.slider ul.slider-carousel, .slider ul.slider-carousel li{
+	height: 455px;
+	}
+	.slider ul.slider-carousel li H1{
+		margin-top: 50px;
+	}
+}
+@media screen and (max-width: 370px){
+
+	.slider,.slider ul.slider-carousel, .slider ul.slider-carousel li{
+	height: 450px;
+	}
+	.slider ul.slider-carousel li H1{
+		margin-top: 20px;
+		font-size: 30px;
+	}
+	.slider ul.slider-carousel li H2{
+		font-size: 28px;
+	}
+	.slider ul li a{
+		display: block;
+		width: 70%;
+		text-align: center;
+		margin-left: 15%;
+		padding: 0px;
+	}
+
+}
+@media screen and (max-width: 992px){
+	blockquote{	
+	width:100%;
+	margin-bottom: 20px;
+
+}
+}
+@media screen and (max-width: 1199px){
+
+	.portfolio-carousel h3{
+		font-size: 19px;
+	}
+
+	.portfolio .inner-content{
+		width: 240px;
+		height: 240px;
+	}
+	.portfolio .inner-content img{
+		width: 100%;
+		height: 100%;
+	}
+
+	.interest-carousel h3{
+		font-size: 19px;
+	}
+	/*.interest-header p{
+		font-size: 15px;
+		text-align: center;
+		width: 100%;
+
+	}*/
+
+	.interest .inner-content{
+		width: 240px;
+		height: 240px;
+	}
+	.interest .inner-content img{
+		width: 100%;
+		height: 100%;
+	}
+}
+@media screen and (max-width: 767px){
+
+	.portfolio-carousel h3{
+		font-size: 16px;
+	}
+
+	.portfolio .inner-content{
+		width: 180px;
+		height: 180px;
+	}
+	.portfolio .inner-content img{
+		width: 100%;
+		height: 100%;
+	}
+	.interest-carousel h3{
+		font-size: 18px;
+	}
+	.interest-carousel p{
+		font-size: 11px;
+		text-align: center;
+		width: 100%;
+
+	}
+
+	.interest .inner-content{
+		width: 180px;
+		height: 180px;
+	}
+	.interest .inner-content img{
+		width: 100%;
+		height: 100%;
+	}
+}

@@ -1,0 +1,94 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="index.master.cs" Inherits="Coursework_WebForm.index" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- css style -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<!-- <link rel="stylesheet" href="css/font-awesome.min.css"> -->
+	<link rel="stylesheet" href="font/css/all.min.css">
+	<script type="text/javascript" src="js/popper.js"></script>
+	<link rel="stylesheet" href="css/slicknav.min.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="cssFile.css">
+	<link rel="stylesheet" type="text/css" href="css/responsive.css">
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/caroufredsel.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/jquery.slicknav.min.js"></script>
+	<script type="text/javascript" src="js/smoothscroll.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server" style="margin-left:0px; margin-right:0px; width:100%;">
+        <div>
+            <header>
+				<div class="container">
+					<div class="row">
+						<a class="logo animated fadeInLeft" href="home.aspx"><img style="margin-left:-100px; width: 210px;height: 230px; margin-top:-14px;" class="log" src="img/finallogo.png" alt="logo"/></a>
+						<nav class="animated fadeInRight">
+							<ul class="menu" id="menu">
+								<li><a href="Staff.aspx">Staff</a></li>
+								<li><a href="Designation.aspx">Designation</a></li>
+								<li><a href="customer.aspx">Customer</a></li>
+								<li><a href="Package.aspx">Package</a></li>
+								<li><a href="Tourguide.aspx">Tour Guide</a></li>
+								<li><a href="customer_package.aspx">Customer-Package</a></li>
+								<li><a href="staff_role.aspx">Staff-Role</a></li>
+								<li><a href="package_activity.aspx">Package-Activity</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</header>
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+            </asp:ContentPlaceHolder>
+            <footer class="section-padding" id="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					
+					<h1 class="underline green"><span class="white">Contact</span> <span class="green">Us</span></h1>
+					<div class="aboutfoot">
+						<p style="margin-left:-30px;"><i class="fa fa-envelope"></i><span class="contact-email">MnsTravels@gmail.com</span></p>
+						<p style="margin-left:-85px;"><i class="fa fa-mobile"></i><span class="contact-phone">+977-9810456710</span></p>
+						<p style="margin-left:-8px;"><i class="fa fa-location-arrow"></i><span class="contact-location">Biratchowk, Morang, Nepal</span></p>
+					</div>
+
+				</div>
+                <div class="col-md-4"></div>
+				
+				<div class="col-md-4">
+					<h1 class="underline twtcolor"><span class="white">Stay In</span> <span class="twtcolor">Touch</span></h1>
+
+					<section class="social-links">
+						<ul>
+						<li class="facebook"><a href="https://www.facebook.com/saw.meer.372"><i class="fab fa-facebook"></i></a></li>
+						<li class="twitter"><a href="https://twitter.com/saw_meer92"><i class="fab fa-twitter"></i></a></li>
+						<li class="linkedin"><a href=""><i class="fab fa-linkedin"></i></a></li>
+						<li class="instagram"><a href="https://www.instagram.com/saw_meer99/"><i class="fab fa-instagram"></i></a></li>
+						<li class="google-plus"><a href="#"><i class="fab fa-google-plus"></i></a></li>
+					</ul>
+					</section>
+				</div>
+
+			</div>
+		</div>
+		<div class="copyright">
+			<p>Copyright &copy; <span class="primary">Samir Alam</span> 2020. All Rights Reserved.</p>
+		</div>
+	</footer>
+        </div>
+    </form>
+</body>
+</html>
